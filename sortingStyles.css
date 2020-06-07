@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+p {
+    padding-left:30px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  margin-left: auto;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 60px 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #4099FF;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+    .column {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+    
+}
+
+a {
+  text-decoration: none;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 3;
+}
+
+p {
+  color: white;
+  position: relative;
+  left: -10px;
+  font-family: 'Lato';
+}
+
+.button {
+  background-color: #000000; /* Green */
+  border: none;
+  color: white;
+ padding-left:20px;
+padding-right: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 75px;
+    margin-left:150px;
+  cursor: pointer;
+}
+
+.button3 {
+    border-radius: 8px;
+}
+#sidebar {
+  height: 250px;
+  width: 10px;
+  position: fixed;
+  text-align: center;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+p i {
+  left: 30px;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 24px;
+}
+
+
+.social {
+  margin-left: -200px;
+  width: 230px;
+  padding: 0;
+  display: inline-table;
+  height: 0px;
+ background-color: #333;
+  -moz-transition-property: margin-left;
+  -moz-transition-duration: 0.2s;
+  -moz-transition-delay: 0.2s;
+  -ms-transition-property: margin-left;
+  -ms-transition-duration: 0.2s;
+  -ms-transition-delay: 0.2s;
+  -o-transition-property: margin-left;
+  -o-transition-duration: 0.2s;
+  -o-transition-delay: 0.2s;
+  -webkit-transition-property: margin-left;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-delay: 0.2s;
+  box-shadow: 0px 0px 6px 0px #3E3D3D;
+  cursor: pointer;
+}
+
+.social:hover {
+  margin-left: -30px;
+  width: 230px;
+  background-color: #3b5998;
+}
+
+.portfolio:hover {
+  background-color: #4099FF;
+}
+
+.github:hover {
+  background-color: #DD4B39;
+}
+.portfolio p i {
+  left: 50px;
+}
+
+.linkedin p i {
+  left: 20px;
+}
+
+.github p i {
+  left: 18px;
+}
+
+.youtube p i {
+  left: 18px;
+}
+
+.youtube:hover {
+  background-color: #E52D27;
+}
+
+.linkedin:hover {
+  background-color: #0976B4;
+}
